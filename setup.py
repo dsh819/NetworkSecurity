@@ -16,11 +16,11 @@ def get_requirements()-> list[str]:
         print(f"Error while reading requirement.txt: {e}")
     return requirement_lst
 
-setup(
-    name='network_security',
-    version='0.1.0',
-    packages=find_packages(),
-    install_requires=get_requirements(),
-    description='A package for network security analysis and monitoring.',
-    author='Harshith Davanamsubbaramaiah',
-    author_email='dsh819@gmail.com')
+# setup(
+#     name='network_security',
+#     version='0.1.0',
+#     packages=find_packages(),
+#     install_requires=get_requirements(),
+#     description='A package for network security analysis and monitoring.',
+#     author='Harshith Davanamsubbaramaiah',
+#     author_email='dsh819@gmail.com')

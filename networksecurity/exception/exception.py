@@ -16,9 +16,9 @@ class NetworkSecurityException(Exception):
         return f"Error occured in [{self.file_name}] line number [{self.line_number}] and error msg[{str(self.message)}]:"
     
 
-if __name__ == "__main__":
-    try:
-        logging.info("Testing NetworkSecurityException")
-        a = 1/0
-    except Exception as e:
-        raise NetworkSecurityException(e, sys)
+# if __name__ == "__main__":
+#     try:
+#         logging.info("Testing NetworkSecurityException")
+#         a = 1/0
+#     except Exception as e:
+#         raise NetworkSecurityException(e, sys)
