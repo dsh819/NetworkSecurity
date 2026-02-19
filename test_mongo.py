@@ -1,13 +1,9 @@
 
 import urllib.parse
 from pymongo.mongo_client import MongoClient
+import os
 
-
-
-escaped_username = urllib.parse.quote_plus("dsh819_db_user")
-escaped_password = urllib.parse.quote_plus("admin819")
-
-uri = f"mongodb+srv://dsh819_db_user:admin819@networksecurity.92qqjjg.mongodb.net/?appName=NetworkSecurity"
+uri = os.getenv("MONGO_DB_URL")
 client = MongoClient(uri)
 
 try:
